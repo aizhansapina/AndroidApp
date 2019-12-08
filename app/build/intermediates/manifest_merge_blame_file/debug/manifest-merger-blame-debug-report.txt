@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.esoxjem.movieguide"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:6:5-66
+11-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:6:22-64
+12
+13    <application
+13-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:8:5-31:19
+14        android:name="com.esoxjem.movieguide.BaseApplication"
+14-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:9:9-40
+15        android:allowBackup="true"
+15-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:10:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.1.0] /Users/aizhansapina/.gradle/caches/transforms-2/files-2.1/81dd4596496e65312916e8e08d42d9b9/core-1.1.0/AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:11:9-43
+19        android:label="@string/app_name"
+19-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:12:9-41
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme" >
+21-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:13:9-40
+22        <activity
+22-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:14:9-22:20
+23            android:name="com.esoxjem.movieguide.listing.MoviesListingActivity"
+23-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:15:13-58
+24            android:launchMode="singleTask" >
+24-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:16:13-44
+25            <intent-filter>
+25-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:17:13-21:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:18:17-68
+26-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:18:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:20:17-76
+28-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:20:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:23:9-30:20
+32            android:name="com.esoxjem.movieguide.details.MovieDetailsActivity"
+32-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:24:13-57
+33            android:parentActivityName="com.esoxjem.movieguide.listing.MoviesListingActivity"
+33-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:25:13-72
+34            android:theme="@style/AppTheme" >
+34-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:26:13-44
+35            <meta-data
+35-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:27:13-29:65
+36                android:name="android.support.PARENT_ACTIVITY"
+36-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:28:17-63
+37                android:value=".listing.MoviesListingActivity" />
+37-->/Users/aizhansapina/AndroidApp/app/src/main/AndroidManifest.xml:29:17-63
+38        </activity>
+39    </application>
+40
+41</manifest>
